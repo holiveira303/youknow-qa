@@ -1,4 +1,4 @@
-package test;
+package br.com.affero.youknow.test;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;

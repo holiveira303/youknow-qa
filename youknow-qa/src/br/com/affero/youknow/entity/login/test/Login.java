@@ -2,7 +2,8 @@ package br.com.affero.youknow.entity.login.test;
 
 import org.openqa.selenium.WebDriver;
 
-import test.PaginaTres;
+import br.com.affero.youknow.test.PaginaTres;
+
 
 
 public class Login extends YouknowQA

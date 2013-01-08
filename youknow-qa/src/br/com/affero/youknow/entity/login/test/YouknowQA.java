@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.LoadableComponent;
 
-import test.PaginaTres;
+import br.com.affero.youknow.test.PaginaTres;
+
 
 public abstract class YouknowQA extends LoadableComponent<YouknowQA>
 {

@@ -8,6 +8,9 @@
   <property name="build" location="build"/>
   <property name="dist"  location="dist"/>
   <property name="lib"  location="lib"/>
+	
+  <!-- set global properties for this test -->
+  <property name="test.FooTest" value="br.com.affero.youknow.test.FooTest" />
 
   <target name="init">
     <!-- Create the time stamp -->
@@ -42,5 +45,21 @@
     <!-- Delete the ${build} and ${dist} directory trees -->
     <delete dir="${build}"/>
     <delete dir="${dist}"/>
+  </target>
+	
+  <target name="test">
+	<path id="test.classpath">
+	  <pathelement location="${build}" />
+	  <pathelement location="${lib}/junit-dep-4.11.jar" />
+	  <fileset dir="${lib}">
+	    <include name="**/*.jar"/>
+	  </fileset>
+	</path>
+			
+	<junit fork="yes" haltonfailure="yes">
+	    <test name="${test.FooTest}" />
+	    <formatter type="plain" usefile="false" />
+	    <classpath refid="test.classpath" />
+	</junit>
   </target>
 </project>
