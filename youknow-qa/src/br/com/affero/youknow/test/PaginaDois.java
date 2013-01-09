@@ -25,7 +25,7 @@ public class PaginaDois extends LoadableComponent<PaginaDois>
 	
 	public void submit()
 	{
-		driver.findElement(By.id("submit")).click();
+		driver.findElement(By.id("submita")).click();
 	}
 
 	@Override
