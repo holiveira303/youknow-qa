@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class FooTest
+public class FooTesti
 {
 	private PaginaUm paginaUm;
 	PaginaDois paginaDois;
